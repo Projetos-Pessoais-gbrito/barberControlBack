@@ -1,1 +1,5 @@
-const message = 'hello world';
+export class Person {
+  sayHello() {
+    return 'hello world!';
+  }
+}
