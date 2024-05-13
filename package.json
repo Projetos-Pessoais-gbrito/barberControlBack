@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "licenses": [
-    {
-      "type": "MIT",
-      "file": "LICENSE"
-    }
-  ],
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
@@ -22,7 +17,6 @@
   },
   "keywords": [],
   "author": "Gustavo Brito",
-  "license": "ISC",
   "dependencies": {
     "@types/node": "^20.12.11",
     "date-fns": "^3.6.0",
