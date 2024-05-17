@@ -20,5 +20,5 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": "error"
   },
-  "ignorePatterns": ["coverage/lcov-report/*.js"]
+  "ignorePatterns": ["coverage/lcov-report/*.js", "jest.config.js"]
 }
