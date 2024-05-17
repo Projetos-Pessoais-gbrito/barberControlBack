@@ -1,7 +1,6 @@
-import { Person } from './index';
+import { Person } from './app';
 
-it('should sum', () => {
-  const person = new Person();
-
-  expect(person.sayHello()).toBe('hello world!');
+it('should create a person', () => {
+  const person = new Person(1, 'John');
+  expect(person.name).toBe('John');
 });
