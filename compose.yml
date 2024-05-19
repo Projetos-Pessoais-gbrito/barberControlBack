@@ -1,0 +1,14 @@
+services:
+  postgres-database:
+    image: postgres
+    container_name: 'your-project-awesome-name'
+    ports:
+      - '${DB_PORT}'
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+    networks:
+      - backend
+
+networks:
+  backend:
