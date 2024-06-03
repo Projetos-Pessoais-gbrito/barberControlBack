@@ -2,6 +2,9 @@
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%23004284B.svg?style=for-the-badge&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/docker%20compose-%23004284B.svg?style=for-the-badge&logo=docker&logoColor=white) ![Jest](https://img.shields.io/badge/jest-%23C21325.svg?style=for-the-badge&logo=jest&logoColor=white) ![Husky](https://img.shields.io/badge/husky-%234000C7.svg?style=for-the-badge&logo=husky&logoColor=white) ![Lint-staged](https://img.shields.io/badge/lint--staged-%23E50000.svg?style=for-the-badge&logo=lint-staged&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-1B1E24.svg?style=for-the-badge&logo=prettier&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
+## Pre requisito
+
+- Versão do node a partir da v21.6.0
 
 ## Descrição
 
@@ -30,6 +33,12 @@ Depois de clonar o projeto, rode o seguinte comando para instalar as dependênci
 npm install
 ```
 
+Caso use o yarn como gerenciador de pacote
+
+```bash
+npm install --global yarn
+```
+
 ## Instrução de uso
 
 Configure seu .env e coloque a porta que voce deseja rodar o servidor, siga o exemplo do .env-example
@@ -37,6 +46,8 @@ Configure seu .env e coloque a porta que voce deseja rodar o servidor, siga o ex
 Após isso é sugerido que faça um teste simulando um commit
 
 ```bash
+yarn build
+yarn husky:prepare
 git add .
 git commit -m "chore: initial commit"
 ```
